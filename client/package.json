@@ -27,8 +27,5 @@
     "@vitejs/plugin-react": "^3.0.0",
     "eslint-plugin-react": "^7.32.2",
     "vite": "^4.0.0"
-  },
-  "engines": {
-    "node": ">=NODE_JS_VERSION"
-}
+  }
 }
