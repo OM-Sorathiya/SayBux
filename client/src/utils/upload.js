@@ -6,8 +6,7 @@ const upload = async (file) => {
   data.append("upload_preset", "SayBux");
 
   try {
-    const res = await axios.post("https://api.cloudinary.com/v1_1/dgew5ktff/image/upload", data);
-    // import.meta.env.VITE_UPLOAD_LINK
+    const res = await axios.post(import.meta.env.VITE_UPLOAD_LINK, data);
     const { url } = res.data;
     return url;
   } catch (err) {
